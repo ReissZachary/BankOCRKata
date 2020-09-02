@@ -11,3 +11,16 @@ C:\Users\zacha\source\repos\bankOCRKata\BankOCR\obj\Debug\netcoreapp3.1\BankOCR.
 C:\Users\zacha\source\repos\bankOCRKata\BankOCR\obj\Debug\netcoreapp3.1\BankOCR.dll
 C:\Users\zacha\source\repos\bankOCRKata\BankOCR\obj\Debug\netcoreapp3.1\BankOCR.pdb
 C:\Users\zacha\source\repos\bankOCRKata\BankOCR\obj\Debug\netcoreapp3.1\BankOCR.genruntimeconfig.cache
+C:\Users\niels\BankOCRKata\bin\Debug\netcoreapp3.1\BankOCR.exe
+C:\Users\niels\BankOCRKata\bin\Debug\netcoreapp3.1\BankOCR.deps.json
+C:\Users\niels\BankOCRKata\bin\Debug\netcoreapp3.1\BankOCR.runtimeconfig.json
+C:\Users\niels\BankOCRKata\bin\Debug\netcoreapp3.1\BankOCR.runtimeconfig.dev.json
+C:\Users\niels\BankOCRKata\bin\Debug\netcoreapp3.1\BankOCR.dll
+C:\Users\niels\BankOCRKata\bin\Debug\netcoreapp3.1\BankOCR.pdb
+C:\Users\niels\BankOCRKata\obj\Debug\netcoreapp3.1\BankOCR.csprojAssemblyReference.cache
+C:\Users\niels\BankOCRKata\obj\Debug\netcoreapp3.1\BankOCR.AssemblyInfoInputs.cache
+C:\Users\niels\BankOCRKata\obj\Debug\netcoreapp3.1\BankOCR.AssemblyInfo.cs
+C:\Users\niels\BankOCRKata\obj\Debug\netcoreapp3.1\BankOCR.csproj.CoreCompileInputs.cache
+C:\Users\niels\BankOCRKata\obj\Debug\netcoreapp3.1\BankOCR.dll
+C:\Users\niels\BankOCRKata\obj\Debug\netcoreapp3.1\BankOCR.pdb
+C:\Users\niels\BankOCRKata\obj\Debug\netcoreapp3.1\BankOCR.genruntimeconfig.cache

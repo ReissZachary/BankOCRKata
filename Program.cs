@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
+
 namespace BankOCR
 {
     class Program
@@ -13,7 +14,12 @@ namespace BankOCR
   ||_  _|  | _||_|  ||_  _|
                            ";             
 
+            string[] lines = ReadInFile();
+            // foreach(var line in lines) {
+            //   Console.WriteLine(buildAccountNumber(ParseAccountNumber(line)));
+            // }
             buildAccountNumber(ParseAccountNumber(input));
+            
         }
 
         private static char[][] ParseAccountNumber(string input){
@@ -57,7 +63,8 @@ namespace BankOCR
                         sixthNumber[k] = lines[i][15 + j];
                         seventhNumber[k] = lines[i][18 + j];
                         eighthNumber[k] = lines[i][21 + j];
-                        ninthNumber[k] = lines[i][24 + j];
+
+                        //ninthNumber[k] = lines[i][24 + j];
                         k++;
                 }
             }
@@ -114,6 +121,23 @@ namespace BankOCR
                 }                            
             }
             return acctNum;
+        }
+
+        public static string[] ReadInFile() {
+            
+            string[] lines = System.IO.File.ReadAllLines(@"BankOrcStory1_SampleInput.txt");
+            List<string> returnLineArray = new List<string>();
+            Console.WriteLine(lines.Length);
+            Console.WriteLine(returnLineArray.Count);
+            
+            for(int i = 0; i < lines.Length; i+=4) {
+                List<string> newLinesArray = new List<string>();
+                newLinesArray.Add((lines[i] + lines[i+1] + lines[i+2] +lines[i+3]));
+                returnLineArray.Concat(newLinesArray.ToArray());
+                Console.WriteLine($"{i}: {returnLineArray.ToString()}");
+                
+            } 
+            return returnLineArray.ToArray();
         }
     }
 }
