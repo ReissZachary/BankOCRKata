@@ -7,7 +7,7 @@ namespace BankOCR
     class Constants
     {
         public static string ZERO = " _ | ||_|   ";
-        public static string ONE = "     |  |   ";
+        public static string ONE = "     |  |";
         public static string TWO = " _  _||_    ";
         public static string THREE = " _  _| _|   ";
         public static string FOUR = "   |_|  |   ";

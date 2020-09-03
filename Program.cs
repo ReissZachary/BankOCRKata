@@ -15,10 +15,10 @@ namespace BankOCR
                            ";             
 
             string[] lines = ReadInFile();
-            // foreach(var line in lines) {
-            //   Console.WriteLine(buildAccountNumber(ParseAccountNumber(line)));
-            // }
-            buildAccountNumber(ParseAccountNumber(input));
+            foreach(var line in lines) {
+              Console.WriteLine(buildAccountNumber(ParseAccountNumber(line)));
+            }
+            //ParseAccountNumber(input);
             
         }
 
@@ -26,7 +26,6 @@ namespace BankOCR
 
             
             var newString = input.Split("\n")
-            .Select(l => l.Replace("\r", string.Empty))
             .ToList();
             
             char[] lineOne = newString[0].ToCharArray();         
@@ -79,44 +78,55 @@ namespace BankOCR
             acctNumberArray[7] = eighthNumber;
             acctNumberArray[8] = ninthNumber;
 
-            return acctNumberArray;
 
+            // string test = new string(firstNumber);
+            // string trim = String.Concat(test.Where(c => !Char.IsWhiteSpace(c)));  
+
+            // for(int i = 0; i < trim.Length; i++){
+            //     Console.Write(trim[i]);
+            // }
+            // for(int i = 0; i < Constants.ONE.Length; i++){
+            //     Console.Write(Constants.ONE[i]);
+            // }
             // Console.WriteLine(firstNumber[5].CompareTo(Constants.ONE[5]));
-            // Console.WriteLine(secondNumber);
-            // Console.WriteLine(Constants.TWO.ToCharArray());
+            // Console.WriteLine(test.ToString().Replace(" ", "0"));
+            // Console.WriteLine(Constants.ONE.Replace(" ", "0"));
+            // Console.WriteLine(test.CompareTo(Constants.));
+            return acctNumberArray;
         }
 
         public static string buildAccountNumber(char[][] acctNumArray){
             string acctNum = "";
             foreach(var number in acctNumArray){                
-                if(number.SequenceEqual(Constants.ZERO)){
+                string numberString = new string(number);
+                if(numberString.CompareTo(Constants.ZERO) == 0){
                     acctNum.Concat("0");
                 }
-                else if(number.SequenceEqual(Constants.ONE)){
+                else if(numberString.CompareTo(Constants.ONE) == 0){
                     acctNum.Concat("1");
                 }
-                else if(number.SequenceEqual(Constants.TWO)){
+                else if(numberString.CompareTo(Constants.TWO) == 0){
                     acctNum.Concat("2");
                 }
-                else if(number.SequenceEqual(Constants.THREE)){
+                else if(numberString.CompareTo(Constants.THREE) == 0){
                     acctNum.Concat("3");
                 }
-                else if(number.SequenceEqual(Constants.FOUR)){
+                else if(numberString.CompareTo(Constants.FOUR) == 0){
                     acctNum.Concat("4");
                 }
-                else if(number.SequenceEqual(Constants.FIVE)){
+                else if(numberString.CompareTo(Constants.FIVE) == 0){
                     acctNum.Concat("5");
                 }
-                else if(number.SequenceEqual(Constants.SIX)){
+                else if(numberString.CompareTo(Constants.SIX) == 0){
                     acctNum.Concat("6");
                 }
-                else if(number.SequenceEqual(Constants.SEVEN)){
+                else if(numberString.CompareTo(Constants.SEVEN) == 0){
                     acctNum.Concat("7");
                 }
-                else if(number.SequenceEqual(Constants.EIGHT)){
+                else if(numberString.CompareTo(Constants.EIGHT) == 0){
                     acctNum.Concat("8");
                 }
-                else if(number.SequenceEqual(Constants.NINE)){
+                else if(numberString.CompareTo(Constants.NINE) == 0){
                     acctNum.Concat("9");
                 }                            
             }
@@ -127,14 +137,24 @@ namespace BankOCR
             
             string[] lines = System.IO.File.ReadAllLines(@"BankOrcStory1_SampleInput.txt");
             List<string> returnLineArray = new List<string>();
-            Console.WriteLine(lines.Length);
-            Console.WriteLine(returnLineArray.Count);
+            Console.WriteLine(lines[0]);
+            Console.WriteLine(lines[1]);
+            Console.WriteLine(lines[2]);
+            Console.WriteLine(lines[3]);
+            Console.WriteLine(returnLineArray);
             
             for(int i = 0; i < lines.Length; i+=4) {
-                List<string> newLinesArray = new List<string>();
-                newLinesArray.Add((lines[i] + lines[i+1] + lines[i+2] +lines[i+3]));
-                returnLineArray.Concat(newLinesArray.ToArray());
-                Console.WriteLine($"{i}: {returnLineArray.ToString()}");
+                if(i+4 <= lines.Length){
+                    List<string> newLinesArray = new List<string>();
+                    newLinesArray.Add((lines[i] + lines[i+1] + lines[i+2] +lines[i+3]));
+                    returnLineArray.Concat(newLinesArray.ToArray());
+                    Console.WriteLine($"{i}: {returnLineArray.ToString()}");
+                }
+                else
+                {
+                    Console.WriteLine("You have entered the twilight zone");
+                    break;
+                }
                 
             } 
             return returnLineArray.ToArray();

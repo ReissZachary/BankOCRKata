@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\niels\\BankOCRKata\\BankOCR.csproj": {}
+    "C:\\Users\\zacha\\source\\repos\\bankOCRKata\\BankOCR\\BankOCR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\niels\\BankOCRKata\\BankOCR.csproj": {
+    "C:\\Users\\zacha\\source\\repos\\bankOCRKata\\BankOCR\\BankOCR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\niels\\BankOCRKata\\BankOCR.csproj",
+        "projectUniqueName": "C:\\Users\\zacha\\source\\repos\\bankOCRKata\\BankOCR\\BankOCR.csproj",
         "projectName": "BankOCR",
-        "projectPath": "C:\\Users\\niels\\BankOCRKata\\BankOCR.csproj",
-        "packagesPath": "C:\\Users\\niels\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\niels\\BankOCRKata\\obj\\",
+        "projectPath": "C:\\Users\\zacha\\source\\repos\\bankOCRKata\\BankOCR\\BankOCR.csproj",
+        "packagesPath": "C:\\Users\\zacha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zacha\\source\\repos\\bankOCRKata\\BankOCR\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\niels\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zacha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
